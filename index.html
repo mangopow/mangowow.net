@@ -8,14 +8,26 @@
             background-image: url('https://www.transparenttextures.com/patterns/cardboard.png'); /* Card-like texture */
             font-family: "Arial", sans-serif; /* Cleaner and more professional font */
             color: #004400; /* Dark green for text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
             text-align: center;
         }
 
         h1 {
             font-size: 48px;
-            color: #ff6600; /* Mango orange */
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Text shadow */
-            margin-left: -20px; /* Shift left */
+            color: #FF6F00; /* White text for maximum contrast */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 255); /* Darker text shadow for better contrast */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 1000px;
         }
 
         .content {
@@ -25,8 +37,8 @@
             margin: 20px;
             display: inline-block;
             text-align: left;
-            width: 70%;
-            margin-left: -20px; /* Shift left */
+            width: 50%;
+            height: 180px; /* Reduced height for shorter box */
         }
 
         .content h2 {
@@ -35,13 +47,6 @@
 
         .content p, .content ul {
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Text shadow for paragraph and list */
-        }
-
-        .sidebar {
-            position: absolute;
-            top: 100px;
-            right: 20px;
-            width: 200px;
         }
 
         a {
@@ -60,44 +65,40 @@
             color: #004400;
             padding: 10px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Text shadow for footer */
-            margin-left: -20px; /* Shift left */
         }
 
         marquee {
             font-size: 24px;
             color: #004400;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for marquee */
-            margin-left: -20px; /* Shift left */
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to mangowow.net!</h1>
-    <marquee>🥭 Celebrating the joy of mangos! 🥭</marquee>
+    <div class="container">
+        <h1>Welcome to mangowow.net!</h1>
+        <marquee>🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭🥭</marquee>
 
-    <div class="content">
-        <h2>Why Mangos Are Great</h2>
-        <p>Mangos are tasty, versatile, and perfect for any occasion.</p>
-        <ul>
-            <li>Rich in vitamins and nutrients</li>
-            <li>Great for smoothies, desserts, or snacking</li>
-            <li>A symbol of tropical fun</li>
-        </ul>
-    </div>
+        <div class="content">
+            <h2>Why Mangos Are Great</h2>
+            <p>Mangos are tasty, versatile, and perfect for any occasion.</p>
+            <ul>
+                <li>Rich in vitamins and nutrients</li>
+                <li>Great for smoothies, desserts, or snacking</li>
+                <li>A symbol of tropical fun</li>
+            </ul>
+        </div>
 
-    <div class="content">
-        <h2>Join the Mango Club!</h2>
-        <p>Enjoy mangos? Join our community to discover recipes, fun facts, and more!</p>
-        <a href="mailto:join@mangowow.net">Click here to join!</a>
-    </div>
+        <div class="content">
+            <h2>Join the Mango Club!</h2>
+            <p>Enjoy mangos? Join our community to discover recipes and fun facts!</p>
+            <a href="mailto:join@mangowow.net">Click here to join!</a>
+        </div>
 
-    <div class="sidebar">
-        <img src="/mnt/data/proxy-image.jpg" alt="Tropicana Orange & Mango Juice" style="width:100%; border: 2px solid #ff6600;">
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2000-2025 MangoWow.net | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a></p>
-        <p>Powered by the love of mangos. 🥭</p>
+        <div class="footer">
+            <p>&copy; 2023-2025 mangowow.net | <a href="about.html">About Us</a>
+            <p>Powered by the love of mangos.</p>
+        </div>
     </div>
 </body>
 </html>
